@@ -5,7 +5,7 @@ def main():
 	url = 'http://en.wikipedia.org/wiki/List_of_cities_and_towns_in_India_by_population'
 	page = parse(url).getroot()
 	db = {}
-	for i in xrange(1,26):
+	for i in range(1,26):
 		table = page.cssselect('table.wikitable')[i]
 		flag = 0
 		for r in table:
